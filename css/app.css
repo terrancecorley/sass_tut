@@ -1,3 +1,4 @@
+@import '_functions.css';
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,6 +339,10 @@ template {
 
 html {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map */

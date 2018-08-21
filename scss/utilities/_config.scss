@@ -1,0 +1,40 @@
+// * Global Config
+
+// * Font Stacks
+
+$font-family--primary: 'Open Sans', helvetica, sans-serif;
+
+// * Font Weights
+
+$font-weight--reg: 400;
+$font-weight--semi-bold: 600;
+$font-weight--bold: 700;
+$font-weight--x-bold: 800;
+
+// * Descriptive Base Colors
+
+$black: #000;
+$white: #fdfdfd;
+$gray: #555353;
+$sea-green: #57BBBF;
+
+// * Color Usage
+
+$color--primary: $black;
+$color--secondary: $white;
+
+// * Text
+
+$base__font-size: 16px;
+$base__line-height: 24px;
+$letter-spacing: 1px;
+
+// * Path To Assets
+
+$path--rel: '../../assets/';
+
+// * Breakpoints
+
+$break-sm: 1px;
+$break-md: 768px;
+$break-lg: 1100px;
