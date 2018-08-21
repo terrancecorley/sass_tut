@@ -1,0 +1,42 @@
+// * Mixins
+
+// * BEM Selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// * Media Queries
+
+@mixin mq($breakpt) {
+
+  @if $breakpt == 'small' {
+    @media (min-width: $break-sm) and (max-width: $break-md) {
+      @content;
+    }
+  } @else if $breakpt == 'medium' {
+    @media (min-width: $break-md + 1) {
+      @content;
+    }
+  } @else if $breakpt == 'large' {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  } @else {
+    @error '`#{$breakpt}` is not a valid breakpoint.'
+  }
+}
+
+// * Transitions
+
+@mixin trans($prop, $dur: 0.2s, $effect: ease-in-out) {
+  transition: $dur $prop $effect;
+}
