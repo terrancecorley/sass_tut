@@ -14,6 +14,14 @@
   }
 }
 
+// * Grids
+
+@mixin g-row($just: space-between) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $just;
+}
+
 // * Media Queries
 
 @mixin mq($breakpt) {
@@ -39,4 +47,11 @@
 
 @mixin trans($prop, $dur: 0.2s, $effect: ease-in-out) {
   transition: $dur $prop $effect;
+}
+
+// * Text Spacing
+
+@mixin text-spacing($letter-spacing: 4px, $word-spacing: 4px) {
+  letter-spacing: $letter-spacing;
+  word-spacing: $word-spacing;
 }

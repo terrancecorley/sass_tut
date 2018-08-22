@@ -7,8 +7,8 @@
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
-  header {
-    padding: 0 4%;
+  .main-header {
+    padding: 0 6%;
   }
 }
 
@@ -362,8 +362,12 @@ body {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #000;
+  color: #3f3e3e;
   background-color: #fdfdfd;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -376,9 +380,42 @@ img {
   max-width: 100%;
 }
 
+.main-header {
+  font-size: 1rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.main-header .centered-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-header {
+  background-color: #fdfdfd;
+}
+.main-header .main-header__title-wrap h2,
+.main-header .main-header__title-wrap h3 {
+  margin-top: 0;
+}
+.main-header .main-header__title-wrap h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}
+.main-header .main-header__title-wrap h3 {
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+}
+
 .nav-btn--mobile {
   height: 32px;
   width: 32px;
+  margin-top: 1em;
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
@@ -395,4 +432,4 @@ img {
   }
 }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=styles.css.map */

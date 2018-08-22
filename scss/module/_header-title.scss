@@ -1,0 +1,22 @@
+.main-header {
+  background-color: $white;
+  .main-header__title-wrap {
+    h2,
+    h3 {
+      margin-top: 0;
+    }
+  
+    h2 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      @include text-spacing;
+    }
+  
+    h3 {
+      font-weight: $font-weight--reg;
+      font-size: 1em;
+      text-align: center;
+      @include text-spacing;
+    }
+  }
+}
