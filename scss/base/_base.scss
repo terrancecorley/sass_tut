@@ -5,6 +5,10 @@
   box-sizing: inherit;
 }
 
+:root {
+  font-size: $base__font-size;
+}
+
 html {
   box-sizing: border-box;
 }

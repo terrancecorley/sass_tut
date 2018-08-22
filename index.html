@@ -9,34 +9,36 @@
   <title>Sass tut</title>
 </head>
 <body>
-  <header>
-    <div>
-      <h2>Allan Johnson</h2>
-      <h3>Personal Life Coach</h3>
+  <header class="main-header">
+    <div class="centered-container">
+      <div class="main-header__title-wrap">
+        <h2>Allan Johnson</h2>
+        <h3>Personal Life Coach</h3>
+      </div>
+      <nav>
+        <a class="nav-btn--mobile is-displayed-mobile" href="#">
+          <img src="assets/menu.svg" alt="Site navigation button">
+        </a>
+  
+        <ul class="site-nav is-hidden-mobile">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <a class="nav-btn--mobile is-displayed-mobile" href="#">
-        <img src="assets/menu.svg" alt="Site navigation button">
-      </a>
-
-      <ul class="site-nav is-hidden-mobile">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 </body>
 </html
