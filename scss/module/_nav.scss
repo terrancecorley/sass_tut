@@ -1,6 +1,21 @@
+nav {
+  .nav-btn--mobile {
+    height: 32px;
+    width: 32px;
+    margin-top: 1em;
+  }
 
-.nav-btn--mobile {
-  height: 32px;
-  width: 32px;
-  margin-top: 1em;
+  .site-nav--md {
+    align-self: center;
+    @include mq(medium) {
+      @include g-row;
+      li:not(:first-child) {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  @include mq(medium) {
+    @include g-row;
+  }
 }

@@ -4,10 +4,10 @@
     h2,
     h3 {
       margin-top: 0;
+      margin-bottom: 0;
     }
   
     h2 {
-      margin-bottom: 0;
       text-transform: uppercase;
       @include text-spacing;
     }
