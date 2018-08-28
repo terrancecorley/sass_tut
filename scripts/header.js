@@ -10,6 +10,10 @@ const header = (() => {
     } else {
       navBtnIcon.src = 'assets/menu.svg';
     }
+
+    // create ul and append to dom on `toggle`
+    // may need to add z-index to current nav btn
+    
   });
 
 })();
