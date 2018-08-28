@@ -6,6 +6,9 @@
     padding: 0;
     max-width: 85%;
   }
+  @include mq(large) {
+    max-width: 65%;
+  }
 }
 
 %padded-container {

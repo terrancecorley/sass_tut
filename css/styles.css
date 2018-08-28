@@ -5,6 +5,11 @@
     max-width: 85%;
   }
 }
+@media (min-width: 1100px) {
+  .centered-container {
+    max-width: 65%;
+  }
+}
 
 @media (min-width: 1px) and (max-width: 768px) {
   .main-header {
@@ -425,6 +430,9 @@ nav .site-nav--md {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  nav .site-nav--md a {
+    padding: 0.5em;
   }
   nav .site-nav--md li:not(:first-child) {
     margin-left: 1em;
