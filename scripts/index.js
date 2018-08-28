@@ -1,3 +1,3 @@
 (() => {
- console.log('main runs', test.test); 
+ console.log('main runs'); 
 })();
