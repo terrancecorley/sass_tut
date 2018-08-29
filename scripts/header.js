@@ -3,6 +3,7 @@ const header = (() => {
   // change nav btn img on click
   const navBtn = document.querySelector('#nav-btn');
   const navBtnIcon = document.querySelector('#nav-btn-icon');
+  const mobileNav = document.querySelector('#site-nav--sm');
 
   navBtn.addEventListener('click', () => {
     if (navBtnIcon.src.indexOf('menu.svg') !== -1) {
@@ -11,8 +12,8 @@ const header = (() => {
       navBtnIcon.src = 'assets/menu.svg';
     }
 
-    // create ul and append to dom on `toggle`
     // may need to add z-index to current nav btn
+    mobileNav.classList.toggle('hidden');
     
   });
 
