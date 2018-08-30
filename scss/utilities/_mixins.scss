@@ -22,6 +22,12 @@
   justify-content: $just;
 }
 
+@mixin g-col($align-i: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align-i;
+}
+
 // * Media Queries
 
 @mixin mq($breakpt) {
@@ -54,4 +60,19 @@
 @mixin text-spacing($letter-spacing: 4px, $word-spacing: 4px) {
   letter-spacing: $letter-spacing;
   word-spacing: $word-spacing;
+}
+
+// * Buttons
+@mixin btn--primary {
+  background-color: $color--primary;
+  color: $color--secondary;
+  border: 2px solid $color--primary;
+  transition: all 0.2s ease-in-out;
+  padding: 0.4em 0.6em;
+  &:hover {
+    color: $color--primary;
+    background-color: transparent;
+    border-color: $color--primary;
+    cursor: pointer;
+  }
 }

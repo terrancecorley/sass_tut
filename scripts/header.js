@@ -13,8 +13,7 @@ const header = (() => {
     }
 
     // may need to add z-index to current nav btn
-    mobileNav.classList.toggle('hidden');
-    
+    mobileNav.classList.toggle('hidden');    
   });
 
 })();

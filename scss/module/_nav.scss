@@ -1,6 +1,9 @@
 nav {
   a {
     color: $black;
+    &:active {
+      color: $sea-green;
+    }
   }
 
   .nav-btn--mobile {
@@ -17,7 +20,7 @@ nav {
   }
 
   .site-nav--sm {
-    font-size: 2.5rem;
+    font-size: 2rem;
     z-index: 100;
     background-color: $white;
     position: absolute;
@@ -25,10 +28,19 @@ nav {
     left: 0;
     width: 100vw;
     height: 100%;
-    padding-top: 2em;
+    padding-top: 5em;
     text-align: center;
     @include mq(medium) {
       display: none;
+    }
+
+    li {
+      width: 10em;
+      margin: 0 auto 1em;
+      &:not(:last-child) {
+        border-bottom: 2px solid lighten($black, 65%);
+        padding: 0 0 0.5em;
+      }
     }
   }
 
