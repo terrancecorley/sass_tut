@@ -1,4 +1,8 @@
 nav {
+  a {
+    color: $black;
+  }
+
   .nav-btn--mobile {
     height: 32px;
     width: 32px;
@@ -35,6 +39,10 @@ nav {
 
       a {
         padding: 0.5em;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: $sea-green;
+        }
       }
 
       li:not(:first-child) {

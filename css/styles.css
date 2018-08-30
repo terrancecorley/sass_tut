@@ -21,6 +21,10 @@
   display: none;
 }
 
+.selected {
+  color: #57BBBF;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -421,6 +425,9 @@ img {
   word-spacing: 4px;
 }
 
+nav a {
+  color: #3f3e3e;
+}
 nav .nav-btn--mobile {
   height: 32px;
   width: 32px;
@@ -462,6 +469,10 @@ nav .site-nav--md {
   }
   nav .site-nav--md a {
     padding: 0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  nav .site-nav--md a:hover {
+    color: #57BBBF;
   }
   nav .site-nav--md li:not(:first-child) {
     margin-left: 1em;

@@ -1,5 +1,4 @@
 // Containers
-
 .centered-container {
   @include mq(medium) {
     margin: 0 auto;
@@ -20,4 +19,9 @@
 // Display
 .hidden {
   display: none;
+}
+
+// Colors
+.selected {
+  color: $sea-green;
 }
