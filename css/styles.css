@@ -25,6 +25,12 @@
   color: #57BBBF;
 }
 
+.line-dec {
+  width: 3em;
+  height: 2px;
+  background-color: #3f3e3e;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -440,7 +446,7 @@ img {
   color: #fdfdfd;
   border: 2px solid #3f3e3e;
   transition: all 0.2s ease-in-out;
-  padding: 0.4em 0.6em;
+  padding: 0.45em 0.7em;
   margin-top: 0.5em;
 }
 .banner button:hover {
@@ -541,6 +547,64 @@ nav .site-nav--md {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.about {
+  font-size: 1rem;
+}
+.about h2 {
+  font-size: 1.75em;
+  margin: 0.5em 0 0.75em;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+@media (min-width: 1100px) {
+  .about h2 {
+    font-size: 3em;
+  }
+}
+.about p {
+  line-height: 1.6;
+  word-spacing: 1px;
+}
+.about button {
+  background-color: #3f3e3e;
+  color: #fdfdfd;
+  border: 2px solid #3f3e3e;
+  transition: all 0.2s ease-in-out;
+  padding: 0.45em 0.7em;
+  margin-top: 1.2em;
+}
+.about button:hover {
+  color: #3f3e3e;
+  background-color: transparent;
+  border-color: #3f3e3e;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.about-text {
+  padding: 3em 6%;
+  flex-basis: 50%;
+}
+@media (min-width: 1100px) {
+  .about-text {
+    max-width: 33%;
+    margin-left: auto;
+    align-self: center;
+  }
+}
+
+.about-img-wrap {
+  flex-basis: 50%;
 }
 
 @media (min-width: 1px) and (max-width: 768px) {

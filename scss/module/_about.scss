@@ -1,0 +1,44 @@
+.about {
+  font-size: 1rem;
+
+  h2 {
+    font-size: 1.75em;
+    margin: 0.5em 0 0.75em;
+    text-transform: uppercase;
+    font-weight: $font-weight--x-bold;
+    letter-spacing: 2px;
+    @include mq(large) {
+      font-size: 3em;
+    }
+  }
+
+  p {
+    line-height: 1.6;
+    word-spacing: 1px;
+  }
+
+  button {
+    @include btn--primary;
+    margin-top: 1.2em;
+  }
+
+  @include mq(medium) {
+    @include g-row;
+    flex-wrap: nowrap;
+  }
+}
+
+.about-text {
+  padding: 3em 6%;
+  flex-basis: 50%;
+
+  @include mq(large) {
+    max-width: 33%;
+    margin-left: auto;
+    align-self: center;
+  }
+}
+
+.about-img-wrap {
+  flex-basis: 50%;
+}
