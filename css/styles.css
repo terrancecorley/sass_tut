@@ -418,20 +418,35 @@ img {
   height: 550px;
   text-align: center;
   font-size: 1.5rem;
-  padding: 2.5em 0.5em;
+  padding: 2.75em 0.5em;
+}
+@media (min-width: 1100px) {
+  .banner {
+    background-attachment: fixed;
+    height: 780px;
+    padding-top: 5em;
+  }
 }
 .banner p {
+  letter-spacing: 2px;
   margin: 0;
   font-size: 0.775em;
   text-transform: uppercase;
 }
 .banner h1 {
+  color: black;
   font-size: 2.35em;
   margin: 0;
   text-transform: uppercase;
   line-height: 1;
   font-weight: 800;
   letter-spacing: 10px;
+}
+@media (min-width: 1100px) {
+  .banner h1 {
+    font-size: 5em;
+    letter-spacing: 20px;
+  }
 }
 .banner .word-break {
   display: block;
@@ -454,6 +469,11 @@ img {
   background-color: transparent;
   border-color: #3f3e3e;
   cursor: pointer;
+}
+@media (min-width: 1100px) {
+  .banner button {
+    margin-top: 1em;
+  }
 }
 
 .main-header {
