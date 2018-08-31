@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
-  .main-header {
+  .services-section, .main-header {
     padding: 0 6%;
   }
 }
@@ -623,8 +623,86 @@ nav .site-nav--md {
   }
 }
 
-.about-img-wrap {
-  flex-basis: 50%;
+.about-img-wrap img {
+  display: block;
+}
+@media (min-width: 769px) {
+  .about-img-wrap {
+    flex-basis: 50%;
+  }
+}
+
+.services-wrap button {
+  margin: 0 auto;
+  display: block;
+}
+.services-wrap > button {
+  background-color: #3f3e3e;
+  color: #fdfdfd;
+  border: 2px solid #3f3e3e;
+  transition: all 0.2s ease-in-out;
+  padding: 0.45em 0.7em;
+  margin-top: 4em;
+}
+.services-wrap > button:hover {
+  color: #3f3e3e;
+  background-color: transparent;
+  border-color: #3f3e3e;
+  cursor: pointer;
+}
+
+.services-section {
+  font-size: 1rem;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+@media (min-width: 769px) {
+  .services-section {
+    background-image: url("../assets/secondary-bg.webp");
+  }
+}
+.services-section h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.75em;
+  letter-spacing: 2px;
+}
+@media (min-width: 1100px) {
+  .services-section h2 {
+    font-size: 3em;
+  }
+}
+
+.services {
+  padding: 1em;
+}
+.services .services__title {
+  text-align: center;
+}
+.services .services__title h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 0.2em;
+}
+.services .services__title p {
+  margin: 0;
+}
+.services p {
+  line-height: 1.6;
+  margin: 2em 0;
+}
+.services button {
+  background-color: #57BBBF;
+  color: #fdfdfd;
+  border: 2px solid #57BBBF;
+  transition: all 0.2s ease-in-out;
+  padding: 0.45em 0.7em;
+}
+.services button:hover {
+  background-color: #3fa0a4;
+  border-color: #3fa0a4;
+  cursor: pointer;
 }
 
 @media (min-width: 1px) and (max-width: 768px) {

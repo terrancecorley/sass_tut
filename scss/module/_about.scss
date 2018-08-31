@@ -40,5 +40,10 @@
 }
 
 .about-img-wrap {
-  flex-basis: 50%;
+  img {
+    display: block;
+  }
+  @include mq(medium) {
+    flex-basis: 50%;
+  }
 }

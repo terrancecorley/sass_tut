@@ -76,3 +76,16 @@
     cursor: pointer;
   }
 }
+
+@mixin btn--secondary {
+  background-color: $btn--secondary;
+  color: $color--secondary;
+  border: 2px solid $btn--secondary;
+  transition: all 0.2s ease-in-out;
+  padding: 0.45em 0.7em;
+  &:hover {
+    background-color: darken($btn--secondary, 10%);
+    border-color: darken($btn--secondary, 10%);
+    cursor: pointer;
+  }
+}
