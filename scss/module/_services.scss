@@ -56,4 +56,29 @@
   button {
     @include btn--secondary;
   }
+
+  @include mq(medium) {
+    @include g-row;
+    flex-wrap: nowrap;
+    background-color: $white;
+    padding: 2em;
+  }
+
+  > div {
+    @include mq(medium) {
+      flex-basis: 50%;
+    }
+  }
+
+  > div:first-child {
+    @include mq(medium) {
+      border-right: 1px solid $black;
+    }
+  }
+
+  > div:nth-child(2) {
+    @include mq(medium) {
+      padding-left: 1.5em;
+    }
+  }
 }

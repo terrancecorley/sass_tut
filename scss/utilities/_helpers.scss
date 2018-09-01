@@ -3,7 +3,7 @@
   @include mq(medium) {
     margin: 0 auto;
     padding: 0;
-    max-width: 85%;
+    max-width: 87%;
   }
   @include mq(large) {
     max-width: 65%;
@@ -13,6 +13,12 @@
 %padded-container {
   @include mq('small') {
     padding: 0 6%;
+  }
+  @include mq(large) {
+    padding: 0 8%;
+  }
+  @include mq(large) {
+    padding: 0 10%;
   }
 }
 
