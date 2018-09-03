@@ -31,28 +31,58 @@
   }
 }
 
-.social-icon {
-  display: inline-block;
+.contact-form {
+
+  input,
+  textarea {
+    border: 2px solid $black;
+    width: 100%;
+    color: $gray;
+    padding: 0.4em;
+    background-color: transparent;
+  }
+
+  > *::placeholder {
+    color: $gray;
+  }
+
+  input {
+    margin-bottom: 0.5em;
+  }
+
+  button {
+    margin-top: 1em;
+    width: 8em;
+    @include btn--primary;
+  }
 }
 
-.twitter {
-  @include social-link(twitter, 22px);
+.social-icons {
+  .social-icon {
+    display: inline-block;
+  }
+  
+  .twitter {
+    @include social-link(twitter, 22px);
+  }
+  
+  .facebook {
+    @include social-link(facebook, 22px);
+  }
+  
+  .google {
+    @include social-link(google, 22px);
+  }
+  
+  .instagram {
+    @include social-link(instagram, 22px);
+  }
+  
+  .youtube {
+    @include social-link(youtube, 22px);
+  }
 }
 
-.facebook {
-  @include social-link(facebook, 22px);
-}
 
-.google {
-  @include social-link(google, 22px);
-}
-
-.instagram {
-  @include social-link(instagram, 22px);
-}
-
-.youtube {
-  @include social-link(youtube, 22px);
-}
 
 // may be a way to use sass functions to get rid of site specific classes
