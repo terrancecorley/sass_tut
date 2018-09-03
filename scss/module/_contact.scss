@@ -1,0 +1,25 @@
+.social-icon {
+  display: inline-block;
+}
+
+.twitter {
+  @include social-link(twitter, 22px);
+}
+
+.facebook {
+  @include social-link(facebook, 22px);
+}
+
+.google {
+  @include social-link(google, 22px);
+}
+
+.instagram {
+  @include social-link(instagram, 22px);
+}
+
+.youtube {
+  @include social-link(youtube, 22px);
+}
+
+// may be a way to use sass functions to get rid of site specific classes

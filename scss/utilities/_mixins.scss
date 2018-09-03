@@ -89,3 +89,14 @@
     cursor: pointer;
   }
 }
+
+// * Social Links
+@mixin social-link($link, $w, $h: $w) {
+  $social-link: map-get($social-links, $link);
+
+  background-image: url($social-link);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: $w;
+  height: $h;
+}

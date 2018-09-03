@@ -43,3 +43,12 @@ $break-lg: 1100px;
 // * Border Radius
 $br--curved: 4px;
 $br--round: 50%;
+
+// * Social Links
+$social-links: (
+  twitter: '#{$path--rel}/twitter.svg',
+  facebook: '#{$path--rel}/facebook.svg',
+  instagram: '#{$path--rel}/instagram.svg',
+  google: '#{$path--rel}/google.svg',
+  youtube: '#{$path--rel}/youtube.svg', 
+);
