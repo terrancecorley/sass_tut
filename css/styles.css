@@ -748,8 +748,16 @@ nav .site-nav--md {
   background-color: #57BBBF;
   padding-top: 2em;
 }
+@media (min-width: 769px) {
+  .contact-section {
+    padding-top: 5em;
+  }
+}
 .contact-section h2 {
   margin: 0.5em 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
 }
 .contact-section a,
 .contact-section p {
@@ -760,9 +768,34 @@ nav .site-nav--md {
   color: #3f3e3e;
 }
 
+@media (min-width: 769px) {
+  .contact-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-wrap > * {
+    flex-basis: 50%;
+  }
+
+  .contact-wrap h2 {
+    min-width: 100%;
+    margin-bottom: -250px !important;
+  }
+
+  .line-dec {
+    flex-basis: 2em;
+  }
+}
+
 .contact-info address {
   font-style: normal;
   margin: 2em 0;
+}
+@media (min-width: 769px) {
+  .contact-info address {
+    padding-top: 3em;
+  }
 }
 .contact-info .email {
   display: block;
@@ -798,6 +831,12 @@ nav .site-nav--md {
   border-color: #3f3e3e;
   cursor: pointer;
 }
+@media (min-width: 769px) {
+  .contact-form button {
+    float: right;
+    clear: right;
+  }
+}
 
 .social-icons {
   display: flex;
@@ -808,6 +847,11 @@ nav .site-nav--md {
 @media (min-width: 1px) and (max-width: 768px) {
   .social-icons {
     margin-top: 4em;
+  }
+}
+@media (min-width: 769px) {
+  .social-icons {
+    margin-top: -80px;
   }
 }
 .social-icons .social-icon {
@@ -859,6 +903,20 @@ nav .site-nav--md {
 .main-footer p {
   margin: 0;
   padding: 1em 0;
+}
+@media (min-width: 769px) {
+  .main-footer p {
+    padding: 2em 0;
+  }
+}
+.main-footer a,
+.main-footer a:visited {
+  color: #3f3e3e;
+  transition: all 0.2s ease-in-out;
+}
+.main-footer a:hover,
+.main-footer a:visited:hover {
+  color: #fdfdfd;
 }
 
 @media (min-width: 1px) and (max-width: 768px) {

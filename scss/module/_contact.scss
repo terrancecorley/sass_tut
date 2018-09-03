@@ -2,9 +2,15 @@
   background-color: $sea-green;
   padding-top: 2em;
   @extend %padded-container;
+  @include mq(medium) {
+    padding-top: 5em;
+  }
 
   h2 {
     margin: 0.5em 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight--x-bold;
   }
 
   a,
@@ -18,10 +24,35 @@
   }
 }
 
+.contact-wrap {
+  @include mq(medium) {
+    @include g-row;
+    @at-root {
+      // flex styles for lg displays
+      & > * {
+        flex-basis: 50%;
+      }
+
+      .contact-wrap h2 {
+        min-width: 100%;
+        margin-bottom: -250px !important;
+      }
+
+      .line-dec {
+        flex-basis: 2em;
+      }
+    }
+  }
+}
+
 .contact-info {
   address {
     font-style: normal;
     margin: 2em 0;
+
+    @include mq(medium) {
+      padding-top: 3em;
+    }
   }
 
   .email {
@@ -53,6 +84,11 @@
     margin-top: 1em;
     width: 8em;
     @include btn--primary;
+    // btn alignment for lg displays
+    @include mq(medium) {
+      float: right;
+      clear: right;
+    }
   }
 }
 
@@ -61,6 +97,9 @@
   justify-content: flex-start;
   @include mq(small) {
     margin-top: 4em;
+  }
+  @include mq(medium) {
+    margin-top: -80px;
   }
 
   .social-icon {
