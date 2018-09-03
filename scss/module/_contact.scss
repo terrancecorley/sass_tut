@@ -1,7 +1,6 @@
 .contact-section {
   background-color: $sea-green;
   padding-top: 2em;
-  padding-bottom: 2em;
   @extend %padded-container;
 
   h2 {
@@ -58,28 +57,38 @@
 }
 
 .social-icons {
+  @include g-row;
+  justify-content: flex-start;
+  @include mq(small) {
+    margin-top: 4em;
+  }
+
   .social-icon {
     display: inline-block;
   }
+
+  :not(:last-child) {
+    margin-right: 1em;
+  }
   
   .twitter {
-    @include social-link(twitter, 22px);
+    @include social-link(twitter, 26px);
   }
   
   .facebook {
-    @include social-link(facebook, 22px);
+    @include social-link(facebook, 26px);
   }
   
   .google {
-    @include social-link(google, 22px);
+    @include social-link(google, 26px);
   }
   
   .instagram {
-    @include social-link(instagram, 22px);
+    @include social-link(instagram, 26px);
   }
   
   .youtube {
-    @include social-link(youtube, 22px);
+    @include social-link(youtube, 26px);
   }
 }
 
