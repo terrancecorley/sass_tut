@@ -26,6 +26,7 @@
     font-weight: $font-weight--x-bold;
     font-size: 1.75em;
     letter-spacing: 2px;
+    margin-bottom: 2em;
     @include mq(large) {
       font-size: 3em;
     }
@@ -41,7 +42,7 @@
     h3 {
       text-transform: uppercase;
       font-weight: $font-weight--x-bold;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       margin-bottom: 0.2em;
     }
 
@@ -63,7 +64,7 @@
     @include g-row;
     flex-wrap: nowrap;
     background-color: $white;
-    padding: 2em;
+    padding: 5.75em 1.25em;
   }
 
   > div {

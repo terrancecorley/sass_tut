@@ -678,6 +678,7 @@ nav .site-nav--md {
   font-weight: 800;
   font-size: 1.75em;
   letter-spacing: 2px;
+  margin-bottom: 2em;
 }
 @media (min-width: 1100px) {
   .services-section h2 {
@@ -694,7 +695,7 @@ nav .site-nav--md {
 .services .services__title h3 {
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin-bottom: 0.2em;
 }
 .services .services__title p {
@@ -723,7 +724,7 @@ nav .site-nav--md {
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: #fdfdfd;
-    padding: 2em;
+    padding: 5.75em 1.25em;
   }
 }
 @media (min-width: 769px) {
